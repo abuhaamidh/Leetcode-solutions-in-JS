@@ -1,0 +1,16 @@
+// Simplest solution for Two Sum which is very basic and most commonly asked in interviews.
+So here in this code what it does is:
+  It iterates the whole array two times with i and j
+  And if the values of i and j which is nums[i] + nums[j] == target
+  It returns the nums which is only the values not the index
+
+var twoSum = function(nums, target) {
+    for(let i=0; i< nums.length; i++){
+        for(let j=i+1; j< nums.length; j++){
+            if(nums[j] + nums[i] == target ){
+                return [i,j];
+            }
+        }
+    }
+    return nums;
+};

@@ -1,0 +1,12 @@
+//To find the length of the last word, 
+  First trim(), this is to remove the extra spaces around the string
+  Then we can use split() to convert the string into words, so that we can easily find the length of a particular word
+  And to find the last word we can use length -1 and .length to find the length of the current word.
+
+
+var lengthOfLastWord = function(s) {
+  var wordSplit = s.trim().split(" ");
+  var lastWord =  wordSplit[wordSplit.length-1]
+  return lastWord.length
+   
+};

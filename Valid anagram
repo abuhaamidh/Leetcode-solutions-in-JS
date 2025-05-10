@@ -1,0 +1,17 @@
+//To check the string is a valid anagram
+  First we use the split() to convert the string into an array
+  Then we sort it into an ascending order using sort()
+  Now we can check the length of both s and t and return false if its not same
+  And then we used to iterate it, so that we can compare both values of s, t and return true if its valid anagram
+
+var isAnagram = function(s, t) {
+    s = s.split("").sort()
+    t = t.split("").sort()
+    if(s.length !== t.length) return false
+    for(let i=0; i<s.length; i++){
+        if(s[i] !== t[i]){
+            return false
+           }
+    } 
+    return true
+};

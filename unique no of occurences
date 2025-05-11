@@ -1,0 +1,19 @@
+//This is to find the the occurences of an unique numbers using hashing
+Hashing is nothing more than we can call it as an index of a book, It helps easy finding a chapter among 50 without searching each and every pages.
+
+{
+let store = new Map(); // Creating new Map 
+
+for(let num of arr){ // iterating over arr
+if(store.has(num)){   // If store has the num from arr
+let currentCount = store.get(num);  
+store.set(currentCount + 1)  // we are setting the value as current count and whenever the num repeats it adds by one
+}else{
+store.set(num, 1) //else it sets the value as default as one
+ }
+}
+let occurences = Array.from(store.values()); //Here the count will be in key value pair, so we are just taking only values(count) in an array 
+let uniqueValue = new Set(occurences); //Now we are creating a new Set for occurences, this Set automatically removes duplicate and gives only the unique value
+
+return occurences.length === uniqueValue.size ? true : false //If the length of currentcount and uniquevalue of occurences are equal it returns true or returns false
+}

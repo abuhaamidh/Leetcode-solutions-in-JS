@@ -2,12 +2,12 @@ This repository contains my personal solutions to problems on Leetcode, written 
 
 ABOUT:
 A collection of clean and well documented solutions
-A reference for anyone looking to study patterns and approaches to solving Leetcode problems.
+A reference for anyone looking to study patterns and approaches to solve Leetcode problems.
 
 STRUCTURE:
 Each file contains:
 
-Problem description
-My approach 
-My explanation to solve
+Problem description,
+My approach, 
+My explanation to solve the problem,
 The solution code

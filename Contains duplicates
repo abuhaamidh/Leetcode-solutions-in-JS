@@ -1,0 +1,12 @@
+//To find if the array contains duplicates using Hashmap
+   
+var store = new Map(); // Creating a new map to store values
+
+for(let value of nums){
+if(store.has(value)){  //iterating the nums and if the store has the value from nums, it returns true
+return true
+}
+else{               
+store.set(num, 1)      // if not it returns false
+}
+return false

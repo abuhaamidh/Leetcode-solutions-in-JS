@@ -1,0 +1,11 @@
+// To check whether the given string is a valid Anagram
+
+let s1 = s.split("").sort();  //we are splitting into an individual array and sorting it
+let t1 = t.split("").sort();
+
+if(s.length !== t.length) return false;  //If both the lengths aren't same, then it can't be an valid Anagram
+
+for(let i=0; i<s1.length; i++){  
+if(s1[i] !== t1[i]) return false;    //If the value of s1 is not equals to t1, it returns false
+} 
+return true;                         // It returns true if both the values are equal

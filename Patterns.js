@@ -1,0 +1,30 @@
+Approaches and easy solutions for pattern problems
+
+const n = 5;
+
+//outer loop
+
+for (let i = 0; i < n; i++) {
+  let pattern = " ";
+  //space
+  for (let j = 0; j < n - i + 1; j++) {
+    pattern += " ";
+  }
+  //star
+  for (let j = 0; j < 2 * i + 1; j++) {
+    pattern += "*";
+  }
+  //space
+  for (let j = 0; j < n - i + 1; j++) {
+    pattern += " ";
+  }
+  console.log(pattern);
+}
+
+O/P:
+       *      
+      ***
+     *****
+    *******
+   *********
+-------------------------------------- { } --------------------------------------------------

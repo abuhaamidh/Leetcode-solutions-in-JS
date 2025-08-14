@@ -1,0 +1,58 @@
+                                           { SELECTION SORT }
+
+// To find the minimum value in an array
+// Then swap the current value with the minimum value
+
+const arr = [13, 46, 24, 52, 20, 9];
+
+for (let i = 0; i <= arr.length - 1; i++) {
+  let min = i;
+  for (let j = i + 1; j <= arr.length; j++) {
+    if (arr[j] < arr[i]) {
+      min = j;
+    }
+  }
+  let temp = arr[i];
+  arr[i] = arr[min];
+  arr[min] = temp;
+}
+console.log(arr);
+
+O/P:
+
+C:\Practise.Js>node selection_sort.js
+[ 9, 13, 20, 46, 24, 52 ]
+
+
+------------------------------------------ **** --------------------------------------------------
+
+                                          { BUBBLE SORT }
+//Two main things BTS of Bubble sort:
+
+//* It compares the adjacent values concurrently
+// Then it push the max to the end by making adjacent swaps!
+
+
+
+const arr = [13, 46, 24, 52, 20, 9];
+
+for (i = arr.length - 1; i >= 1; i--) {
+  for (j = 0; j <= i - 1; j++) {
+    if (arr[j] > arr[j + 1]) {
+      //swapping
+
+      //20
+      let temp = arr[j + 1];
+      //52
+      arr[j + 1] = arr[j];
+      //20
+      arr[j] = temp;
+    }
+  }
+}
+console.log(arr);
+
+O/P:
+
+C:\Practise.Js>node bubble_sort.js
+[ 9, 13, 20, 24, 46, 52 ]
